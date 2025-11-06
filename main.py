@@ -57,7 +57,6 @@ def extract_product_name_from_invoice(pdf_path):
         pdf_text = extract_text_from_pdf(pdf_path)
     else:
         pdf_text = ocr_pdf(pdf_path)
-
     if not pdf_text:
         return "No text could be extracted from the PDF."
 
