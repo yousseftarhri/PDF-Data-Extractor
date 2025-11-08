@@ -76,9 +76,12 @@ def extract_product_name_from_invoice(pdf_path):
        - tax_amount
        - currency
        - items (a list of objects with columns like item_name, quantity, unit_price, total_price)
-    2. If some fields are missing, leave them as null.
-    3. Do not include explanations or text outside the JSON.
-    4. Return only valid JSON (no text, no code blocks).
+    2. Extract ALL fields present in the invoice, not just the listed ones  
+    3. If some fields are missing, leave them as null.
+    4. Use descriptive field names for any additional data found  
+    5. Maintain consistent naming conventions (snake_case)  
+    6. Do not include explanations or text outside the JSON.
+    7. Return only valid JSON (no text, no code blocks).
 
     ### Example Output:
     {{
