@@ -49,4 +49,4 @@ GEMINI_API=your_gemini_api_key_here
 - Extract text using the appropriate method 
 - Send the text to Gemini API for structured data extraction 
 - Generate an Excel file with two sheets: "Invoice Info" and "Items"
-- Automatically download the Excel file main.py:115-152
+- Automatically download the Excel file
